@@ -44,7 +44,7 @@ public abstract class ItemMixin {
 				if(tool instanceof MiningToolItem) {
 					tooltip.add(new TranslatableText("tooltip.harvest_level").append(new LiteralText(String.valueOf(material.getMiningLevel()))).formatted(Formatting.GRAY));
 					int efficiency = EnchantmentHelper.get(stack).getOrDefault(Enchantments.EFFICIENCY, 0);
-					int efficiencyModifier = efficiency>0?(efficiency^2)+1:0;
+					int efficiencyModifier = efficiency>0?(efficiency*efficiency)+1:0;
 					MutableText speedText = new TranslatableText("tooltip.harvest_speed").append(new LiteralText(String.valueOf(material.getMiningSpeedMultiplier()+efficiencyModifier))).formatted(Formatting.GRAY);
 					if(efficiency > 0) {
 						speedText.append(new LiteralText(" (+"+efficiencyModifier+")").formatted(Formatting.WHITE));

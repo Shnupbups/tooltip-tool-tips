@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tooltiptooltips",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "name": "Tooltip Tool Tips",
   "description": "Adds information about tools to their tooltips",
