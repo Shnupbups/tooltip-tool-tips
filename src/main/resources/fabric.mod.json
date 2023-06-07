@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tooltiptooltips",
-  "version": "1.0.1",
+  "version": "${version}",
 
   "name": "Tooltip Tool Tips",
   "description": "Adds information about tools to their tooltips",
@@ -10,6 +10,7 @@
   ],
 
   "license": "LGPLv3",
+  "icon": "assets/tooltiptooltips/icon.png",
 
   "environment": "client",
   "mixins": ["tooltiptooltips.mixins.json"],
